@@ -1,0 +1,107 @@
+section{
+    display: flex;
+    align-items: center;
+    margin-right: 3vw;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10vw;
+}
+
+.head{
+    width: 100%;
+}
+
+.head p{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 1vw 0;
+}
+
+.head h1{
+    letter-spacing: 0.2vw;
+}
+
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+section .skills-container{
+    margin-top: 3vw;
+    width: 100%;
+}
+
+section .skills-container .skill {
+    margin: 3vw 0;
+    border-bottom: 1.5px solid rgb(191, 191, 191);
+}
+
+section .skills-container ul{
+    padding-bottom: 2vw;
+}
+
+section p{
+    width: 30vw;
+    font-size: 0.72rem;
+}
+
+section .skills-container .skill input[type="checkbox"]{
+    display: none;
+}
+
+section .skills-container .skill label{
+    user-select: none;
+    outline: none;
+}
+
+input[type="checkbox"]:checked ~ ul h2{
+    background: linear-gradient(90deg,rgb(220, 67, 220),rgb(252, 144, 162),orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 600px) {
+    section{
+        margin: 0 3vh;
+        margin-left: 4vh;
+        flex-wrap: wrap;
+    }
+
+    .head p{
+        font-size: 0.7rem;
+        padding: 2vw 0;
+    }
+
+    .head h1{
+        letter-spacing: 0.5vw;
+        font-size: 7vw;
+    }
+
+    section .skills-container .skill{
+        margin: 10vw 0;
+    }
+
+    section .skills-container .skill h2{
+        font-size: 1.7vh;
+    }
+
+    section .skills-container ul{
+        padding-bottom: 3vh;
+    }
+
+    section .skills-container .skill p{
+        width: 50%;
+        font-size: 1.1vh;
+    }
+
+    section .skills-container .skill label{
+        height: 1vh;
+        font-size: 2.4vh;
+    }
+
+    section .skills-container .skill label:focus{
+        user-select: none;
+        outline: none;
+    }
+}

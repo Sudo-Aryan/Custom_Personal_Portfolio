@@ -1,0 +1,94 @@
+.btn {
+    padding: 1vw 1.8vw;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    font-size: 1vw;
+    > a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.btn:hover{
+    box-shadow: 6px 6px 2rem rgb(184, 184, 184), -6px 0px 2rem rgb(184, 184, 184);
+}
+
+.gradient-layer{
+    background: linear-gradient(90deg,rgb(220, 67, 220),rgb(252, 144, 162), rgb(245, 139, 73),rgb(255, 200, 0));
+    background-size: cover;
+}
+
+/* .semi__circle{
+    height: 50%;
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+    background-color: #000;
+} */
+
+.time-line h5{
+    font-style: italic;
+    font-size: 0.9vw;
+}
+
+.time-line p{
+    font-size: 0.9vw;
+}
+
+.align-ends{
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+}
+
+.align-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.read-more{
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 2.3vw;
+}
+
+.gradient__layer__text{
+    background: linear-gradient(90deg,rgb(220, 67, 220),rgb(252, 144, 162),orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.round__btn{
+    height: 3vmax;
+    width: 3vmax;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    font-size: 1.5vmax;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    .btn{
+        padding: 3vw 5vw;
+        font-size: 2.3vw;
+        > a{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .gradient-layer{
+        background: linear-gradient(145deg,rgb(220, 67, 220),rgb(252, 144, 162),orange);
+        background-size: cover;
+    }
+}

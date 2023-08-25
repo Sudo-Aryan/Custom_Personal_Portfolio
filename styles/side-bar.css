@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+/* side-bar Styles*/
+#side-bar {
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  color: #fff;
+  width: 17vw;
+  height: 100vh;
+  background-color: #000;
+  font-size: 1.05rem;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#side-bar h2 {
+  padding: 3rem 2vw;
+}
+
+/* side-bar : list styles*/
+
+#side-bar ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.list-1 li a {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0.8rem 0rem;
+  padding-left: 2vw;
+  text-decoration: none;
+}
+
+.list-1 li a:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(220, 67, 220),
+    rgb(252, 144, 162),
+    rgb(255, 200, 0)
+  );
+  /* background-color: red; */
+  background-size: cover;
+}
+
+.socials-list li a {
+  color: #fff;
+}
+
+#side-bar .footer {
+  position: absolute;
+  bottom: 0;
+  padding-right: 1vw;
+}
+
+#side-bar .footer p {
+  font-size: 0.8vw;
+}
+
+/* Utility Classes*/
+.nav-align {
+  padding-left: 2vw;
+  opacity: 0.9;
+}
+
+.icon-padding {
+  padding: 0.4vw 2vw;
+}
+
+@media (max-width: 600px) {
+  #side-bar {
+    display: none;
+    width: 12rem;
+    z-index: 99999;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #side-bar h2 {
+    padding: 10vw 5vw;
+  }
+
+  .list-1 li a {
+    font-size: 1rem;
+    padding-left: 4vw;
+  }
+
+  #side-bar .footer {
+    padding-left: 2vw;
+  }
+
+  #side-bar .footer p {
+    font-size: 1.3vmax;
+  }
+
+  .menu {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+  }
+
+  .menuBtn {
+    font-size: 1.6rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0 1rem;
+  }
+
+  #side-bar.show{
+    display: block;
+    transition: all 0.4s ease-in-out 0s !important;
+  }
+}

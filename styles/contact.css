@@ -1,0 +1,51 @@
+#section-1{
+    margin: 0 10rem;
+    min-height: 100vh;
+}
+
+.left-content .heading p{
+    font-size: 0.8rem;
+}
+
+.left-content .heading h2{
+    padding: 1rem 0;
+}
+.container{
+    gap: 1rem;
+}
+
+span{
+    font-size: 0.8rem;
+}
+
+.left-content .contact{
+    margin: 4rem 0;
+    line-height: 2rem;
+}
+
+.left-content .socials{
+    display: flex;
+    gap: 1.5rem;
+}
+
+#section-1 .container .right-content{
+    color: #fff;
+    width: 90vw;
+}
+
+.right-content input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.right-content form{
+    padding: 1rem;
+}
+
+@media (max-width: 1100px) {
+    .container{
+        flex-direction: column;
+        gap: unset;
+    }
+}
