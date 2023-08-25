@@ -1,0 +1,142 @@
+#section-1 {
+  height: 100vh;
+}
+
+.container {
+  padding: 0 2vw;
+}
+
+.container div {
+  width: 30%;
+}
+
+.container .left-content {
+  align-items: center;
+  position: relative;
+  line-height: 4vmax;
+  font-size: 4vmax;
+}
+
+.container .left-content p {
+  padding: 0.1rem 0;
+  font-size: 1.7vmax;
+}
+
+.contact {
+  display: flex;
+  padding: 5vw 0;
+  justify-content: space-between;
+}
+
+.container .left-content .contact p {
+  line-height: 1vmax;
+  font-weight: 600;
+  font-size: 0.7vmax;
+  font-style: italic;
+}
+
+.semicircle-container .semicircle {
+  position: absolute;
+  height: 2vw;
+  width: 14vw;
+  background: linear-gradient(35deg, rgb(224, 35, 224), orange);
+  clip-path: ellipse(50% 100% at 50% 0%);
+  top: 12%;
+  left: -15%;
+  transform: rotate(-35deg);
+  z-index: -1;
+}
+
+.container .right-content img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .container div {
+    width: 100%;
+  }
+
+  .container.test {
+    flex-direction: column;
+    gap: 5rem !important;
+  }
+
+  .container .left-content {
+    line-height: 10vw;
+    font-size: 10vw;
+  }
+
+  .semicircle-container .semicircle {
+    height: 5vw;
+    width: 35vw;
+    top: 12%;
+    left: -10%;
+  }
+
+  .container .left-content p {
+    padding-top: 0.8rem;
+    font-size: 4vw;
+  }
+
+  .contact {
+    justify-content: flex-start;
+  }
+
+  .container .left-content .contact p {
+    font-size: 2vw;
+  }
+
+  @media (min-width: 200px) and (max-width: 375px) {
+    .container .left-content {
+      font-size: 4vmax !important;
+      line-height: 4vmax !important;
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 427px) {
+    .container .left-content {
+      font-size: 4.4vmax !important;
+      line-height: 4.4vmax !important;
+    }
+  }
+
+  @media (min-width: 427px) and (max-width: 496px) {
+    .container .left-content {
+      font-size: 5vmax !important;
+      line-height: 5vmax !important;
+    }
+  }
+}
+
+@media (max-width: 1338px) {
+  .container {
+    flex-direction: column;
+    justify-content: center !important;
+    gap: 1rem;
+  }
+
+  .container div {
+    width: 60%;
+  }
+
+  .container .left-content {
+    margin-top: 2rem;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .container .right-content {
+    width: 70% !important;
+  }
+
+  .container .right-content img {
+    margin: 0 auto;
+  }
+
+  .semicircle-container .semicircle {
+    height: 2vmax;
+    width: 14vmax;
+    top: 10%;
+    left: -12%;
+  }
+}
