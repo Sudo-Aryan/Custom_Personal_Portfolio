@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/skills.css" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/styles/side-bar.css" />
+    <link rel="stylesheet" href="/styles/utility.css" />
+    <link rel="stylesheet" href="/styles/common-page.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="side-bar">
+        <h2 class="nav-align">Aryan</h2>
+        <ul class="list-1">
+          <li class="pages"><a href="../index.html">HOME</a></li>
+          <li class="pages"><a href="about.html">ABOUT</a></li>
+          <li class="pages"><a href="skills.html">SKILLS</a></li>
+          <li class="pages"><a href="works.html">WORKS</a></li>
+          <li class="pages"><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="footer">
+          <ul class="socials-list" style="margin-top: 4rem">
+            <li class="nav-align icon-padding">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="nav-align icon-padding">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="nav-align icon-padding">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="nav-align icon-padding">
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+          <p class="nav-align" style="padding-bottom: 1rem">
+            Copyright &copy;2023 Aryan Halwai. All rights reserved
+          </p>
+        </div>
+      </header>
+      <div class="menu">
+        <button type="button" class="menuBtn" onclick="showNav()">&#9776;</button>
+      </div>
+      <main>
+        <section>
+            <div class="skills-container">
+                <div class="head">
+                    <p>Skills</p>
+                    <h1>MY SKILLS</h1>
+                </div>
+                <div class="skill">
+                  <input type="checkbox" name="skill" id="1">
+                    <ul class="align-ends">
+                    <h2>
+                        <li>WEB DESIGN</li>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit sjnvsn jdnce. Perspiciatis in, nesciunt porro velit<span class="read-more-content"> nihil id quo libero numquam mollitia atque aut laudantium dignissimos.</span></p>
+                    <label for="1" class="read-more">+</label>
+                </ul>
+                </div>
+                <div class="skill">
+                  <input type="checkbox" name="skill" id="2">
+                    <ul class="align-ends">
+                    <h2>
+                        <li>WEB DESIGN</li>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit sjnvsn jdnce. Perspiciatis in, nesciunt porro velit<span class="read-more-content"> nihil id quo libero numquam mollitia atque aut laudantium dignissimos.</span></p>
+                    <label for="2" class="read-more">+</label>
+                </ul>
+                </div>
+                <div class="skill">
+                  <input type="checkbox" name="skill" id="3">
+                    <ul class="align-ends">
+                    <h2>
+                        <li>WEB DESIGN</li>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit sjnvsn jdnce. Perspiciatis in, nesciunt porro velit<span class="read-more-content"> nihil id quo libero numquam mollitia atque aut laudantium dignissimos.</span></p>
+                    <label for="3" class="read-more">+</label>
+                </ul>
+                </div>
+                <div class="skill">
+                  <input type="checkbox" name="skill" id="4">
+                    <ul class="align-ends">
+                    <h2>
+                        <li>WEB DESIGN</li>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit sjnvsn jdnce. Perspiciatis in, nesciunt porro velit<span class="read-more-content"> nihil id quo libero numquam mollitia atque aut laudantium dignissimos.</span></p>
+                    <label for="4" class="read-more">+</label>
+                </ul>
+                </div>
+            </div>
+        </section>
+      </main>
+</body>
+
+<script src="/js/script.js"></script>
+<script>
+
+  document.querySelectorAll('.read-more-content').forEach(content => {
+    content.style.display = 'none';
+  });
+
+  document.querySelectorAll('.skill input[type="checkbox"]').forEach(checkbox => {
+  checkbox.addEventListener('change', function() {
+    const content = this.nextElementSibling;
+    const readMoreContent = content.querySelector('.read-more-content');
+    const label = content.querySelector('.read-more');
+
+    if (this.checked) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      readMoreContent.style.display = 'inline';
+      label.innerText = '-';
+      console.log(content)
+      
+    } else {
+      content.style.maxHeight = null;
+      readMoreContent.style.display = 'none';
+      label.innerText = '+';
+    }
+  });
+});
+
+</script>
+</html>
